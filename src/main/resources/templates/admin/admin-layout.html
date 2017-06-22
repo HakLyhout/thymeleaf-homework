@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<title layout:title-pattern="$CONTENT_TITLE - $DECORATOR_TITLE">TemplateHomework</title>
+<style th:replace="@{/shared/admin/style}"></style>
+<style>
+	#content_wrapper{
+		margin-top: 70px;
+	}
+</style>
+</head>
+<body class="template">
+	
+	<div th:replace="@{/shared/admin/leftside}"></div> 
+	<div th:replace="@{/shared/admin/header}"></div>
+	<div layout:fragment="content" class="content-wrapper"></div>
+	<div th:replace="@{/shared/admin/footer}"></div>
+	<div th:replace="@{/shared/admin/script}"></div>
+</body>
+</html>

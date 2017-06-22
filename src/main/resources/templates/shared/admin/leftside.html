@@ -1,0 +1,109 @@
+<aside id="sidebar_left" class="nano nano-light affix">
+
+        <!-- -------------- Sidebar Left Wrapper  -------------- -->
+        <div class="sidebar-left-content nano-content">
+
+            <!-- -------------- Sidebar Header -------------- -->
+            <header class="sidebar-header">
+
+                
+
+                <!-- -------------- Sidebar - Author Menu  -------------- -->
+                <div class="sidebar-widget menu-widget">
+                    <div class="row text-center mbn">
+                        <div class="col-xs-2 pln prn">
+                            <a href="dashboard1.html" class="text-primary" data-toggle="tooltip" data-placement="top"
+                               title="Dashboard">
+                                <span class="fa fa-dashboard"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 pln prn">
+                            <a href="charts-highcharts.html" class="text-info" data-toggle="tooltip"
+                               data-placement="top" title="Stats">
+                                <span class="fa fa-bar-chart-o"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 pln prn">
+                            <a href="sales-stats-products.html" class="text-system" data-toggle="tooltip"
+                               data-placement="top" title="Orders">
+                                <span class="fa fa-info-circle"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 pln prn">
+                            <a href="sales-stats-purchases.html" class="text-warning" data-toggle="tooltip"
+                               data-placement="top" title="Invoices">
+                                <span class="fa fa-file"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 pln prn">
+                            <a href="basic-profile.html" class="text-alert" data-toggle="tooltip" data-placement="top"
+                               title="Users">
+                                <span class="fa fa-users"></span>
+                            </a>
+                        </div>
+                        <div class="col-xs-4 col-sm-2 pln prn">
+                            <a href="management-tools-dock.html" class="text-danger" data-toggle="tooltip"
+                               data-placement="top" title="Settings">
+                                <span class="fa fa-cogs"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <!-- -------------- /Sidebar Header -------------- -->
+
+            <!-- -------------- Sidebar Menu  -------------- -->
+            <ul class="nav sidebar-menu">
+                <li class="sidebar-label pt30">Menu</li>
+
+                <li class="active">
+                    <a class="accordion-toggle menu-open" th:href="@{/admin/dashboard}">
+                        <span class="fa fa-dashboard"></span>
+                        <span class="sidebar-title" th:text="#{dashboard}"></span>
+                       
+                    </a>
+                </li>  
+                <li class="active">
+                    <a class="accordion-toggle menu-open" th:href="@{/admin/user-list}">
+                        <span class="fa fa-dashboard"></span>
+                        <span class="sidebar-title" th:text="#{user}"></span>
+                        
+                    </a>
+                </li> 
+                <li class="active">
+                    <a class="accordion-toggle menu-open" th:href="@{/admin/user-cu}">
+                        <span class="fa fa-dashboard"></span>
+                        <span class="sidebar-title" th:text="#{user_update}"></span>
+                       
+                    </a>
+                </li> 
+                <li class="active">
+                    <a class="accordion-toggle menu-open" th:href="@{/admin/role-list}">
+                        <span class="fa fa-dashboard"></span>
+                        <span class="sidebar-title" th:text="#{role}"></span>
+                        
+                    </a>
+                </li> 
+                <li class="active">
+                    <a class="accordion-toggle menu-open" th:href="@{/admin/role-cu}">
+                        <span class="fa fa-dashboard"></span>
+                        <span class="sidebar-title" th:text="#{role_update}"></span>
+                        
+                    </a>
+                </li> 
+            </ul>
+            <!-- -------------- /Sidebar Menu  -------------- -->
+
+            <!-- -------------- Sidebar Hide Button -------------- -->
+            <div class="sidebar-toggler">
+                <a href="#">
+                    <span class="fa fa-arrow-circle-o-left"></span>
+                </a>
+            </div>
+            <!-- -------------- /Sidebar Hide Button -------------- -->
+
+        </div>
+        <!-- -------------- /Sidebar Left Wrapper  -------------- -->
+
+    </aside>

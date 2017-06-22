@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  	layout:decorator="/admin/admin-layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard</title>
+</head>
+<body>
+<div layout:fragment="content">
+	<!-- -------------- Main Wrapper -------------- -->
+    <section id="content_wrapper">
+       <h2 th:text="#{role_listing}"></h2>
+		<table class="table table-striped">
+    <thead>
+      <tr>
+        <th th:text="#{id}"></th>
+        <th th:text="#{name}"></th>
+        <th th:text="#{position}"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Sophea</td>
+        <td>Admin</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Buntha</td>
+        <td>Programer</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Pisey</td>
+        <td>Accountant</td>
+      </tr>
+    </tbody>
+  </table>
+    </section>
+</div>
+</body>
+</html>

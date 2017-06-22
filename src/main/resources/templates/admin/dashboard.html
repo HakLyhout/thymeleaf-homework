@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  	layout:decorator="/admin/admin-layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>Dashboard</title>
+</head>
+<body>
+<div layout:fragment="content">
+	<!-- -------------- Main Wrapper -------------- -->
+    <section id="content_wrapper">
+       <h2>Button Styles</h2>
+
+  <a th:href="@{/admin/dashboard}"><button type="button" class="btn btn-primary">Dashboard</button></a>
+  <a th:href="@{/admin/user-list}"><button type="button" class="btn btn-success">UserList</button></a>
+  <a th:href="@{/admin/user-cu}"><button type="button" class="btn btn-info">UserUpdate</button></a>
+  <a th:href="@{/admin/role-list}"><button type="button" class="btn btn-warning">RoleList</button></a>
+  <a th:href="@{/admin/role-cu}"><button type="button" class="btn btn-danger">RoleUpdate</button></a>
+  
+    </section>
+</div>
+</body>
+</html>
