@@ -14,26 +14,24 @@
 		<table class="table table-striped">
     <thead>
       <tr>
-        <th th:text="#{firstname}"></th>
-        <th th:text="#{lastname}"></th>
+      	<th th:text="#{id}"></th>
+        <th th:text="#{username}"></th>
         <th th:text="#{email}"></th>
+        <th th:text="#{gender}"></th>
+        <th th:text="#{phonenumber}"></th>
+        <th th:text="#{status}"></th>
+        <th th:text="#{created_at}"></th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
+      <tr th:each="user : ${USERS}" th:object="${user}">
+        <td th:text="*{id}"></td>
+        <td th:text="*{userName}"></td>
+        <td th:text="*{email}"></td>
+        <td th:text="*{gender}"></td>
+        <td th:text="*{phoneNumber}"></td>
+        <td th:text="*{status}"></td>
+        <td th:text="*{createdDate}"></td>
       </tr>
     </tbody>
   </table>
