@@ -6,8 +6,8 @@ public class User {
 
 	private int id;
 	private String userName;
-	private String email;
-	private String gender, phoneNumber, status, userHash;
+	private String Email;
+	private String Gender, phoneNumber, status, userHash;
 	private Timestamp createdDate;
 	public int getId() {
 		return id;
@@ -22,16 +22,16 @@ public class User {
 		this.userName = userName;
 	}
 	public String getEmail() {
-		return email;
+		return Email;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String Email) {
+		this.Email = Email;
 	}
 	public String getGender() {
-		return gender;
+		return Gender;
 	}
-	public void setGender(String gender) {
-		this.gender = gender;
+	public void setGender(String Gender) {
+		this.Gender = Gender;
 	}
 	public String getPhoneNumber() {
 		return phoneNumber;

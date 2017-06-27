@@ -19,8 +19,7 @@
         <th th:text="#{email}"></th>
         <th th:text="#{gender}"></th>
         <th th:text="#{phonenumber}"></th>
-        <th th:text="#{status}"></th>
-        <th th:text="#{created_at}"></th>
+        <th th:text="#{action}"></th>
       </tr>
     </thead>
     <tbody>
@@ -30,8 +29,11 @@
         <td th:text="*{email}"></td>
         <td th:text="*{gender}"></td>
         <td th:text="*{phoneNumber}"></td>
-        <td th:text="*{status}"></td>
-        <td th:text="*{createdDate}"></td>
+        <td>
+        	<a class="btn btn-primary" th:href="@{/admin/{userHash}/userprofile(userHash=${user.userHash})}" th:text="#{detail}"></a>
+        	<a  class="btn btn-warning" th:href="@{/user/{userHash}/update(userHash=${user.userHash})}" th:text="#{updateuser}"></a>
+        	<a  class="btn btn-danger" th:href="@{/user/{userHash}/delete(userHash=${user.userHash})}" th:text="#{delete}"></a>
+        </td>
       </tr>
     </tbody>
   </table>
